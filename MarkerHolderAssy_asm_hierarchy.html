@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>A2P assembly hierarchy visualization</title>
+</head>
+<body>
+<div class="mermaid">
+graph TD
+glassBoardAssy_001 -- plane --> back_001
+glassBoardAssy_001 -- plane --> back_001
+rightWall_001(rightWall_001<br>*FIXED*) -- plane --> glassBoardAssy_001
+rightWall_001(rightWall_001<br>*FIXED*) -- plane --> glassBoardAssy_001
+rightWall_001(rightWall_001<br>*FIXED*) -- plane --> glassBoardAssy_001
+rightWall_001(rightWall_001<br>*FIXED*) -- plane --> back_001
+back_001 -- plane --> side_001
+back_001 -- plane --> side_001
+back_001 -- plane --> side_001
+back_001 -- plane --> side_002
+back_001 -- plane --> side_002
+back_001 -- plane --> side_002
+side_001 -- plane --> bottom3_001
+side_001 -- plane --> bottom3_001
+side_001 -- plane --> bottom3_001
+side_001 -- plane --> top3_001
+side_001 -- plane --> top3_001
+side_001 -- plane --> top3_001
+bottom3_001 -- plane --> marker_001
+bottom3_001 -- plane --> cleanerBottle_001
+side_002
+top3_001 -- axial --> marker_001
+top3_001 -- axial --> cleanerBottle_001
+marker_001
+cleanerBottle_001
+</div>
+    <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.js"></script>
+    <script>
+        mermaid.initialize({startOnLoad: true});
+    </script>
+</body></html>
